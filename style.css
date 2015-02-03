@@ -1,8 +1,8 @@
-h1.main {
+.main {
     background-color: black;
     filter: alpha(opacity=60);
     opacity: .6;
-    color: #CCFF99;
+    color: #CCFF99 !important;
 }
 
 h2.lux {
