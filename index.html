@@ -23,218 +23,58 @@
 			<!-- Each section element contains an individual slide -->
 			<section data-background="img/tlo-glowne.jpg">
 				<h1 class="main">Funkcje w JavaScript</h1>
+				<h2 class="main">Część druga</h2>
 				<h3 class="main">Michał Matulka</h3>
 				<h3 class="main">michal.matulka@protonmail.ch</h3>
 			</section>
 
-			<section id="show-a-link">
-				<h1>Za Wikipedią</h1>
-				<blockquote cite="http://pl.wikipedia.org/wiki/Podprogram">
-                                        “Podprogram (inaczej funkcja lub procedura) - termin związany z programowaniem proceduralnym. Podprogram to wydzielona część programu wykonująca jakieś operacje. Podprogramy stosuje się, aby uprościć program główny i zwiększyć czytelność kodu.”
-                                </blockquote>
-			</section>
-
 			<section>
-				<h1>Taaa... lepiej obczajcie to</h1>
+					<h2>Przypomnijmy sobie</h2>
+					<h3>Deklaracja "klasyczna"</h3>
+					<pre><code class="javascript" data-trim contenteditable>function mojaFunkcja() {
+//Tutaj jest kod
+}</code></pre>
+					<p style="font-weight: bold">Znana z innych języków programowania</p>
+					<ul>
+							<li>Słowo kluczowe function</li>
+							<li>Nazwa funkcji pomiędzy słowem kluczowym a nawiasami</li>
+							<li>Brak spacji pomiędzy nazwą a nawiasem (jestem pedantycznym nerdem, to nie jest konieczne)</li>
+							<li>Nie kończymy tej deklaracji średnikiem</li>
+					</ul>
 			</section>
-
-                        <section>
-                            <h2>Funkcja jest wydzielonym fragmentem kodu</h2>
-
-                            <pre>
-                                <code class="javascript" data-trim contenteditable>function mojaFunkcja() {
-    var mojaZmienna = 'Weź obadaj ',
-        mojaDrugaZmienna;
-
-    mojaDrugaZmienna = 'ten';
-    mojaDrugaZmienna += ' kod';
-
-    console.log(mojaZmienna + mojaDrugaZmienna);
-}</code>
-                            </pre>
-                        </section>
-                        <section>
-                            <h2>Który możemy wykonywać wielokrotnie</h2>
-                            <pre>
-                                <code class="javascript" data-trim contenteditable>mojaFunkcja();</code>
-                            </pre>
-                        </section>
-                        <section>
-                            <h2>No dobra, to jest wielokrotnie:</h2>
-                            <pre>
-                                <code class="javascript" data-trim contenteditable>mojaFunkcja();
-mojaFunkcja();
-mojaFunkcja();
-mojaFunkcja();
-mojaFunkcja();
-mojaFunkcja();
-mojaFunkcja();
-mojaFunkcja(); //pętle będą kiedy indziej - a znacie komentarze :P?</code>
-                            </pre>
-                        </section>
-                        <section>
-                            <h2>W różnych częściach programu</h2>
-                        </section>
-                        <section data-background="img/network.jpg">
-                            <pre class="imFlying" style="top: -184%; left: 9%;">
-                                <code class="javascript" data-trim contenteditable>mojaFunkcja();</code>
-                            </pre>
-                            <pre class="imFlying" style="top: -190%; left: 51%">
-                                <code class="javascript" data-trim contenteditable>mojaFunkcja();</code>
-                            </pre>
-                            <pre class="imFlying" style="top: 100%; left: -32%">
-                                <code class="javascript" data-trim contenteditable>mojaFunkcja();</code>
-                            </pre>
-                            <pre class="imFlying" style="top: 116%; left: 77%">
-                                <code class="javascript" data-trim contenteditable>mojaFunkcja();</code>
-                            </pre>
-                            <pre class="imFlying" style="top: 621%; left: 45%">
-                                <code class="javascript" data-trim contenteditable>mojaFunkcja();</code>
-                            </pre>
-                        </section>
-                        <section>
-                            <h2>Deklaracja funkcji</h2>
-                            <pre>
-                                <code class="javascript" data-trim contenteditable>function mojaFunkcja() {
-    //Tutaj jest kod
-}</code>
-                            <code class="javascript" data-trim contenteditable>var mojaFunkcja = function () {
-    //Tutaj jest kod
-};</code>
-                            <code class="javascript" data-trim contenteditable>var mojaFunkcja = function mojaFunkcja() {
-    //Tutaj jest kod
-};</code>
-                            <code class="javascript" data-trim contenteditable>(function mojaFunkcja() {
-    //Tutaj jest kod
-})();</code>
-                            <code class="javascript" data-trim contenteditable>waszaFunkcja(function () {
-    //Tutaj jest kod
-});</code>
-                            <code class="javascript" data-trim contenteditable>waszaFunkcja(function mojaFunkcja() {
-    //Tutaj jest kod
-});</code>
-                            </pre>
-														<aside class="notes">
-																<ul>
-																	<li>Deklaracja klasyczna</li>
-																	<li>Deklaracja deklaracja ze zwróceniem wartości</li>
-																	<li>Deklaracja mieszana, klasyczna ze zwróceniem wartości</li>
-																	<li>Deklaracja z wywołaniem czyli funkcja natychmiastowa</li>
-																	<li>Deklaracja anonimowa z przekazaniem jako argument</li>
-																	<li>Deklaracja deklaracja klasyczna z przekazaniem jako argument</li>
-																</ul>
-														</aside>
-                        </section>
-                        <section>
-                            <img src="./img/wat.jpg" alt="wat" />
-														<aside class="notes">
-																<ul>
-																	<li>Deklaracja klasyczna</li>
-																	<li>Deklaracja deklaracja ze zwróceniem wartości</li>
-																	<li>Deklaracja mieszana, klasyczna ze zwróceniem wartości</li>
-																	<li>Deklaracja z wywołaniem czyli funkcja natychmiastowa</li>
-																	<li>Deklaracja anonimowa z przekazaniem jako argument</li>
-																	<li>Deklaracja deklaracja klasyczna z przekazaniem jako argument</li>
-																</ul>
-														</aside>
-                        </section>
-                        <section>
-                            <h2>Deklaracja "klasyczna"</h2>
-                            <pre><code class="javascript" data-trim contenteditable>function mojaFunkcja() {
-    //Tutaj jest kod
-}</code></pre>
-                            <p style="font-weight: bold">Znana z innych języków programowania</p>
-                            <ul>
-                                <li>Słowo kluczowe function</li>
-                                <li>Nazwa funkcji pomiędzy słowem kluczowym a nawiasami</li>
-                                <li>Brak spacji pomiędzy nazwą a nawiasem (jestem pedantycznym nerdem, to nie jest konieczne)</li>
-                                <li>Nie kończymy tej deklaracji średnikiem</li>
-                            </ul>
-                        </section>
-                        <section>
-                            <h2>Deklaracja z wykorzystaniem wartości</h2>
-                            <pre><code class="javascript" data-trim contenteditable>var mojaFunkcja = function () {
+      <section>
+          <h3>Funkcja jako wartość</h3>
+          <p>Pamiętacie deklarację funkcji z wykorzystaniem wartości?</p>
+          <pre><code class="javascript" data-trim contenteditable>var mojaFunkcja = function () {
     //Tutaj jest kod
 };</code></pre>
-                            <p>O tym dalej ;)</p>
-                        </section>
-                        <section>
-                            <h2>Deklaracja mieszana</h2>
-                            <pre><code class="javascript" data-trim contenteditable>var mojaFunkcja = function mojaFunkcja() {
-    //Tutaj jest kod
-};</code></pre>
-                            <p>O tym też dalej ;)</p>
-                        </section>
-                        <section>
-                            <h2>Argumenty funkcji</h2>
-                            <h3>Deklaracja funkcji z argumentami</h3>
-                            <pre><code class="javascript" data-trim contenteditable>function dodaj(a, b) {
-    alert(a + b);
-}</code></pre>
-                            <h3>Wywołanie funkcji z argumentami</h3>
-                            <pre><code>dodaj(2, 3);</code></pre>
-                            <p style="font-weight: bold">Argument staje się zmienną wewnątrz funkcji i nie trzeba deklarować go osobno jako zmiennej!!!!!111</p>
-                        </section>
-                        <section>
-                            <h2>Zwracanie wartości z funkcji</h2>
-                            <h3>Deklaracja funkcji zwracającej wartość</h3>
-                            <pre><code class="javascript" data-trim contenteditable>function siema() {
-    return 'Witaj świecie!';
-}</code></pre>
-                            <h3>Wywołanie funkcji zwracającej wartość</h3>
-                            <p>(i oczywiście wykorzystanie zwróconej wartości)</p>
-                            <pre><code class="javascript" data-trim contenteditable>var zwrotka = siema();
-alert(zwrotka);</code></pre>
-                        </section>
-                        <section>
-                            <p>Wartość zwrócona z wywołania funkcji jest traktowana tak samo, jak wartość dowolnego innego wyrażenia.</p>
-                            <p>Naturalnie, możemy zrobić też tak:</p>
-                            <pre><code class="javascript" data-trim contenteditable>alert(siema());</code></pre>
-                            <p>Lub na przykład tak:</p>
-                            <pre><code class="javascript" data-trim contenteditable>var siemaszki = [siema(), siema(), siema(), siema()];</code></pre>
-                        </section>
-                        <section>
-                            <h2>No to teraz połączmy siły</h2>
-                            <pre>
-                                <code>function dodaj(a, b) {
-    return a + b;
-}</code>
-                            </pre>
-                            <p>I użyjmy broni masowej zagłady</p>
-                            <pre><code>alert(dodaj(7, 4));</code></pre>
-                        </section>
-                        <section>
-                            <h3>A teraz się zacznie...</h3>
-                        </section>
-                        <section>
-                            <h2>Brace yourselves, the win... function assignment is coming!</h2>
-                            <img src="./img/nerd-stark.jpg" alt="Nerd Stark" />
-                        </section>
-                        <section>
-                            <h3>Funkcja jako wartość</h3>
-                            <p>Pamiętacie deklarację funkcji z wykorzystaniem wartości?</p>
-                            <pre><code class="javascript" data-trim contenteditable>var mojaFunkcja = function () {
-    //Tutaj jest kod
-};</code></pre>
-                            <h3>Funkcja sama w sobie jest wartością!</h3>
-                            <p>Nie jest to to samo, co zwrócenie wartości z funkcji.</p>
-                        </section>
-                        <section>
-                            <h3>Przypisanie funkcji do zmiennej</h3>
-                            <pre><code class="javascript" data-trim contenteditable>var dodaj = function (a, b) {
+            <h3>Funkcja sama w sobie jest wartością!</h3>
+            <p>Nie jest to to samo, co zwrócenie wartości z funkcji.</p>
+        </section>
+				<section>
+						<h2>Przypisanie funkcji do zmiennej</h2>
+						<img alt="Zonk" src="./img/cat_gets_stuck_vase.jpg" />
+				</section>
+        <section>
+            <h3>Przypisanie funkcji do zmiennej</h3>
+            <pre><code class="javascript" data-trim contenteditable>var dodaj = function (a, b) {
     return a + b;
 };</code></pre>
-                            <p>Tak jak dowolna inne wyrażenie posiadające lub zwracające wartość, funkcję możemy przypisać do zmiennej.</p>
-                            <p>Przy tej deklaracji <span style="font-weight: bold">nie musimy</span> wstawiać nazwy funkcji pomiędzy słowem kluczowym function a nawiasem</p>
-                        </section>
-                        <section>
-                            <h3>Wywołanie funkcji przypisanej do zmiennej</h3>
-                            <p>Niespodzianka! Niczym nie różni się od zwykłego wywołania!</p>
-                            <pre><code class="javascript" data-trim contenteditable>alert(dodaj(19, 25));</code></pre>
-                        </section>
-                        <section>
-                            <h3>Przekazanie funkcji jako argumentu do innej funkcji</h3>
-                            <pre><code class="javascript" data-trim contenteditable>var przyjmijFunkcje = function (funkcja) {
+            <p>Tak jak dowolna inne wyrażenie posiadające lub zwracające wartość, funkcję możemy przypisać do zmiennej.</p>
+            <p>Przy tej deklaracji <span style="font-weight: bold">nie musimy</span> wstawiać nazwy funkcji pomiędzy słowem kluczowym function a nawiasem</p>
+        </section>
+        <section>
+            <h3>Wywołanie funkcji przypisanej do zmiennej</h3>
+            <p>Niespodzianka! Niczym nie różni się od zwykłego wywołania!</p>
+            <pre><code class="javascript" data-trim contenteditable>alert(dodaj(19, 25));</code></pre>
+        </section>
+				<section>
+						<h2>Przekazanie funkcji jako argumentu do innej funkcji</h2>
+						<img alt="Zonk" src="./img/cat-on-cat.jpg" />
+				</section>
+        <section>
+            <h3>Przekazanie funkcji jako argumentu do innej funkcji</h3>
+            <pre><code class="javascript" data-trim contenteditable>var przyjmijFunkcje = function (funkcja) {
     return 'Przekazana funkcja zwróciła wartość ' + funkcja();
 },
 takaSobieFunkcja = function () {
@@ -244,48 +84,48 @@ takaSobieFunkcja = function () {
 
     return cos;
 };</code></pre>
-                            <h4>Wywołanie tego tworu</h4>
-                            <pre><code class="javascript" data-trim contenteditable>przyjmijFunkcje(takaSobieFunkcja);</code></pre>
-                            <p style='font-weight: bold'>Zwróćcie uwagę na brak nawiasów przy takaSobieFunkcja! Używamy jej jako zmiennej, nie wywołujemy!</p>
-                            <p>Możecie również usłyszeć o tym pod nazwą "callback".</p>
-                        </section>
-                        <section>
-                            <h3>Może teraz bardziej praktyczny przykład</h3>
-                            <pre><code class="javascript" data-trim contenteditable>var wezCosPowiedz = function () {
+            <h4>Wywołanie tego tworu</h4>
+            <pre><code class="javascript" data-trim contenteditable>przyjmijFunkcje(takaSobieFunkcja);</code></pre>
+            <p style='font-weight: bold'>Zwróćcie uwagę na brak nawiasów przy takaSobieFunkcja! Używamy jej jako zmiennej, nie wywołujemy!</p>
+            <p>Możecie również usłyszeć o tym pod nazwą "callback".</p>
+        </section>
+        <section>
+            <h3>Może teraz bardziej praktyczny przykład</h3>
+            <pre><code class="javascript" data-trim contenteditable>var wezCosPowiedz = function () {
     alert('Mówię coś!');
 };</code></pre>
-                            <p>A teraz to, na co wszyscy czekali</p>
-                            <pre><code class="javascript" data-trim contenteditable>setTimeout(wezCosPowiedz, 1000);</code></pre>
-                            <p>(a teraz zgadnijcie co to robi :) )</p>
-                        </section>
-                        <section>
-                            <h3>Literał funkcji</h3>
-                            <p>
-                                Funkcje można przekazywać jak każdą inną zmienną, sama deklaracja funkcji jest jednocześnie jej <span style='font-weight: bold'>literałem</span>!
-                            </p>
-                            <p>Dlatego możemy też zrobić tak:</p>
-                            <pre><code class="javascript" data-trim contenteditable>setTimeout(function () { alert('Mówię coś!'); }, 1000);</code></pre>
-                            <p>Ale nie róbmy bo to robi bałagan w kodzie ;). Zawsze lepiej zadeklarować sobie funkcję w zmiennej i przekazać zmienną. Wtedy widać też jej nazwę.</p>
-                            <p>Zwróćcie uwagę, że ta funkcja nie posiada nazwy. Taką funkcję nazywamy <span style='font-weight: bold'>funkcją anonimową</span>.</p>
-                        </section>
-                        <section>
-                            <h3>Funkcja natychmiastowa</h3>
-                            <p>Funkcja anonimowa może zostać wywołana od razu przy deklaracji.</p>
-                            <pre><code class="javascript" data-trim contenteditable>(function () { alert('Mówię coś!'); })();</code></pre>
-                            <p>Nazywamy ją wtedy funkcją natychmiastową.</p>
-                        </section>
-                        <section>
-                            <h3>Dla ciekawskich</h3>
-                            <p>Te rzeczy będziemy omawiać w przyszłości.</p>
-                            <ul>
-                                <li>Funkcje natychmiastowe służą do ograniczania zasięgu zmiennych, gdyż zmienne zadeklarowane wewnątrz nich nie są widoczne na zewnątrz.</li>
-                                <li>Funkcje w rzeczywistości są <span style='font-weight: bold'>obiektami</span>.</li>
-                            </ul>
-                        </section>
-                        <section>
-                            <h1>Podziękował ;)</h1>
-                        </section>
-                    </div>
+            <p>A teraz to, na co wszyscy czekali</p>
+            <pre><code class="javascript" data-trim contenteditable>setTimeout(wezCosPowiedz, 1000);</code></pre>
+            <p>(a teraz zgadnijcie co to robi :) )</p>
+        </section>
+        <section>
+            <h3>Literał funkcji</h3>
+            <p>
+                Funkcje można przekazywać jak każdą inną zmienną, sama deklaracja funkcji jest jednocześnie jej <span style='font-weight: bold'>literałem</span>!
+            </p>
+            <p>Dlatego możemy też zrobić tak:</p>
+            <pre><code class="javascript" data-trim contenteditable>setTimeout(function () { alert('Mówię coś!'); }, 1000);</code></pre>
+            <p>Ale nie róbmy bo to robi bałagan w kodzie ;). Zawsze lepiej zadeklarować sobie funkcję w zmiennej i przekazać zmienną. Wtedy widać też jej nazwę.</p>
+            <p>Zwróćcie uwagę, że ta funkcja nie posiada nazwy. Taką funkcję nazywamy <span style='font-weight: bold'>funkcją anonimową</span>.</p>
+        </section>
+        <section>
+            <h3>Funkcja natychmiastowa</h3>
+            <p>Funkcja anonimowa może zostać wywołana od razu przy deklaracji.</p>
+            <pre><code class="javascript" data-trim contenteditable>(function () { alert('Mówię coś!'); })();</code></pre>
+            <p>Nazywamy ją wtedy funkcją natychmiastową.</p>
+        </section>
+        <section>
+            <h3>Dla ciekawskich</h3>
+            <p>Te rzeczy będziemy omawiać w przyszłości.</p>
+            <ul>
+                <li>Funkcje natychmiastowe służą do ograniczania zasięgu zmiennych, gdyż zmienne zadeklarowane wewnątrz nich nie są widoczne na zewnątrz.</li>
+                <li>Funkcje w rzeczywistości są <span style='font-weight: bold'>obiektami</span>.</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Podziękował ;)</h1>
+        </section>
+    </div>
 	</div>
 	<!--<script src="lib/js/head.min.js"></script>-->
 	<script src="./reveal.js/lib/js/head.min.js"></script>
